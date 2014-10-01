@@ -13,13 +13,6 @@ describe 'fuse::default' do
       end.converge(described_recipe)
     end
 
-    before do
-      allow(File).to receive(:exist?).and_call_original
-      allow(File).to receive(:exist?).with('/opt/jboss-fuse-6.0.0.redhat-024/users.properties').and_return(false)
-      allow(File).to receive(:exist?).and_call_original
-      allow(File).to receive(:exist?).with('/home/fuse/.m2/settings.xml').and_return(false)
-    end
-
     it 'install depends package for fuse' do
       expect(chef_run).to install_package('fuse_unzip')
     end
@@ -53,7 +46,7 @@ describe 'fuse::default' do
     end
 
     it 'add proxy to maven config file' do
-      expect(chef_run).to create_template('/home/fuse/.m2/settings.xml')
+      expect(chef_run).to_not create_template('/home/fuse/.m2/settings.xml')
     end
   end
 end
