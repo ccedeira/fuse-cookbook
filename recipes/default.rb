@@ -66,7 +66,7 @@ execute 'fuse_owner' do
   action :run
 end
 
-directory "#{node['fuse']['m2_dir']}" do
+directory node['fuse']['m2_dir'] do
   owner node['fuse']['os']['user']
   group node['fuse']['os']['group']
   mode '0755'

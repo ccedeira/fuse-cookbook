@@ -1,6 +1,15 @@
 # 0.1.0
 
-Primer release del cookbook Fuse
+First release of cookbook Fuse
 
 * Features
- * Primer Receta para instalacion de Jboss Fuse
+ * Instalation of Jboss Fuse
+
+# 0.2.0
+
+Second release of cookbook Fuse
+
+* Fixes
+ * Minor attribute fixes
+* Features
+ * Add documentation on README.md

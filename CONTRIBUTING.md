@@ -28,7 +28,7 @@ Development
 -----------
 1. Clone the git repository from GitHub:
 
-        $ git clone git@gitlab:psyreactor/COOKBOOK.git
+        $ git clone git@gitlab:ccedeira/COOKBOOK.git
 
 2. Install the dependencies using bundler:
 
