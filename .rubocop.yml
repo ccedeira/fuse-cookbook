@@ -9,6 +9,7 @@ AllCops:
     - test/**/*
     - vendor/**/*
     - metadata.rb
+    - Guardfile
 
 AlignParameters:
   Enabled: false
